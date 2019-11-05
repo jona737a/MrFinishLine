@@ -1,0 +1,46 @@
+body{
+    margin:0;
+    background-color: rgb(56, 56, 28);
+}
+
+@keyframes spin{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+@keyframes wigle{
+    from{transform: rotate(1deg);}
+    to{transform: rotate(-1deg);}
+}
+
+#bkg{
+    width: 1500px;
+}
+
+#Record{
+    width: 1300px;
+    position: absolute;
+    z-index: 1;
+    top: 52%;
+    left: 7%;
+    animation: spin 15s linear infinite reverse;
+}
+
+#Volume{
+    height: 150px;
+    z-index: 2;
+    position: absolute;
+    left: 75%;
+    top: 22%;
+}
+
+#Arm{
+    height: 1300px;
+    z-index: 3;
+    position: absolute;
+    top: 7%;
+    left: 10%;
+    animation: wigle 2s linear infinite alternate;
+    transform-origin: 136px 215px;
+}
+
